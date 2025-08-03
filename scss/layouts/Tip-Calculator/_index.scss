@@ -1,0 +1,8 @@
+@forward "input";
+@forward "bill";
+@forward "result";
+
+.tip-calculator {
+   display: grid;
+   gap: var(--spacing-md-2);
+}

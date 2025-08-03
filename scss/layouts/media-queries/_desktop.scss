@@ -1,0 +1,17 @@
+@use "../../utils/" as *;
+
+@include breakpoint("desktop") {
+   .document__header {
+      margin-top: 0;
+      margin-bottom: var(--spacing-xl-1);
+   }
+
+   .tip-list {
+      grid-template-columns: repeat(3, 1fr);
+   }
+
+   .result {
+      padding: var(--spacing-xl-1) var(--spacing-lg-1) var(--spacing-lg-1)
+         var(--spacing-lg-1);
+   }
+}

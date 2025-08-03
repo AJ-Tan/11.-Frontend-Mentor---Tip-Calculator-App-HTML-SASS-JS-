@@ -1,0 +1,27 @@
+@use "../../utils/" as *;
+
+@include breakpoint("tablet") {
+   .tip-calculator {
+      grid-template-columns: repeat(2, 1fr);
+      max-width: 64rem;
+      margin-inline: var(--spacing-md-2);
+   }
+
+   .bill {
+      padding: var(--spacing-md-2);
+   }
+
+   .result {
+      align-content: space-between;
+      padding: var(--spacing-lg-2) var(--spacing-lg-1);
+
+      &__amount {
+         font-size: 3rem;
+      }
+   }
+
+   footer {
+      position: absolute;
+      bottom: 0;
+   }
+}

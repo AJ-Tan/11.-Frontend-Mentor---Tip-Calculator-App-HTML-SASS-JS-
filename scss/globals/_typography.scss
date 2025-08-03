@@ -1,0 +1,17 @@
+body,
+input,
+button {
+   font-family: "Space Mono", Arial, sans-serif;
+}
+
+input,
+button,
+button::placeholder {
+   font-size: 1.5rem;
+}
+
+input,
+button,
+body {
+   font-weight: 700;
+}

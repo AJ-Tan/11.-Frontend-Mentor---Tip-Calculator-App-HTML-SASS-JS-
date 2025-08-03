@@ -1,0 +1,11 @@
+@forward "reset";
+@forward "variables";
+@forward "typography";
+
+body {
+   background-color: var(--color-bgColor);
+   min-height: 100vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}

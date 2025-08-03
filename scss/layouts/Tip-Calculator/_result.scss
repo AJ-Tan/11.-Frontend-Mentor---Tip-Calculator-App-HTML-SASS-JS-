@@ -1,0 +1,38 @@
+.result {
+   display: grid;
+   gap: var(--spacing-md-2);
+   background-color: var(--color-accent);
+   border-radius: 1rem;
+   padding: var(--spacing-lg-2) var(--spacing-md-2) var(--spacing-md-2)
+      var(--spacing-md-2);
+
+   &__label,
+   &__label span {
+      line-height: 1.4;
+   }
+
+   &__group-wrapper {
+      display: grid;
+      gap: var(--spacing-md-2);
+   }
+
+   &__group {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+
+   &__amount {
+      color: var(--color-primary);
+      font-size: 2rem;
+   }
+
+   &__label {
+      color: var(--color-neutral-1);
+
+      span {
+         color: var(--color-muted-2);
+         font-size: 0.8rem;
+      }
+   }
+}
