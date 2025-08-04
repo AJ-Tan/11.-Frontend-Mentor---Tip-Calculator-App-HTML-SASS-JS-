@@ -34,7 +34,7 @@ Users should be able to:
 ### Links
 
 -  Solution URL: [GitHub Repository](https://github.com/AJ-Tan/11.-Frontend-Mentor---Tip-Calculator-App-HTML-SASS-JS-)
--  Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+-  Live Site URL: [GitHub Pages](https://aj-tan.github.io/11.-Frontend-Mentor---Tip-Calculator-App-HTML-SASS-JS-/)
 
 ## My process
 
