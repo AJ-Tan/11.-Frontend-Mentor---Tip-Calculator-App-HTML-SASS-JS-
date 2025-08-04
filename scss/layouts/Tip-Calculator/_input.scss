@@ -48,6 +48,9 @@
 
    &__number {
       background-color: var(--color-neutral-2);
+      background-repeat: no-repeat;
+      background-position: var(--spacing-md-2) 50%;
+
       border: none;
       padding: var(--spacing-xs) var(--spacing-md-2);
 
