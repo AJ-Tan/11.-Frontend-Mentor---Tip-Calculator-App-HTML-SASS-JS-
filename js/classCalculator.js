@@ -23,11 +23,14 @@ export class Calculator {
     }
 
     const calcTipAmount = this.#billAmount * this.#tipAmount;
-    const calcTipPerson = calcTipAmount / this.#numberOfPeople;
-    const calcTotal = (this.#billAmount + calcTipAmount) / this.#numberOfPeople;
+    let calcTipPerson = calcTipAmount / this.#numberOfPeople;
+    let calcTotal = (this.#billAmount + calcTipAmount) / this.#numberOfPeople;
 
-    outputTip.textContent = `$${calcTipPerson.toFixed(2)}`;
-    outputTotal.textContent = `$${calcTotal.toFixed(2)}`;
+    calcTipPerson = Math.floor(calcTipPerson * 100) / 100;
+    calcTotal = Math.round(calcTotal * 100) / 100;
+
+    outputTip.textContent = `$${calcTipPerson}`;
+    outputTotal.textContent = `$${calcTotal}`;
   }
 
   initializeBillAmount() {
