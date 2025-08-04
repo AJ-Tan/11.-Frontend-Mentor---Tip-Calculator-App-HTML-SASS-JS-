@@ -16,7 +16,7 @@ export class Calculator {
     const outputTip = document.getElementById("result-tip");
     const outputTotal = document.getElementById("result-total");
 
-    if (!this.#billAmount || !this.#tipAmount || !this.#numberOfPeople) {
+    if (this.#billAmount < 0 || this.#tipAmount < 0 || this.#numberOfPeople < 1) {
       outputTip.textContent = `$0.00`;
       outputTotal.textContent = `$0.00`;
       return false;
@@ -34,7 +34,7 @@ export class Calculator {
     const billAmount = document.getElementById("bill__amount-input");
     billAmount.addEventListener("input", (e) => {
       const billValue = Number(e.currentTarget.value) || 0;
-      this.#billAmount = billValue <= 0 ? 0 : billValue;
+      this.#billAmount = billValue;
 
       this.calculate();
     });
@@ -44,7 +44,7 @@ export class Calculator {
     const numberOfPeople = document.getElementById("bill__people-input");
     numberOfPeople.addEventListener("input", (e) => {
       const numPeopleValue = Number(e.currentTarget.value) || 0;
-      this.#numberOfPeople = numPeopleValue <= 0 ? 0 : numPeopleValue;
+      this.#numberOfPeople = numPeopleValue;
 
       this.calculate();
     });
@@ -77,7 +77,7 @@ export class Calculator {
       }
 
       const tipAmount = Number(e.currentTarget.dataset["value"]) || 0;
-      this.#tipAmount = tipAmount <= 0 ? 0 : tipAmount;
+      this.#tipAmount = tipAmount;
       e.currentTarget.setAttribute("aria-pressed", "true");
       this.calculate();
     };
