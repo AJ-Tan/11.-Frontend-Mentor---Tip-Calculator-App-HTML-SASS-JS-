@@ -62,8 +62,7 @@
       }
    }
 
-   &__label-group:has(+ .input__wrapper .input__number:user-invalid)
-      &__label-error {
+   &__label-group:has(+ .input__number:user-invalid) &__label-error {
       display: block;
    }
 

@@ -9,24 +9,6 @@
 }
 
 .bill {
-   // &__amount-wrapper {
-   //    &::before {
-   //       content: "";
-   //       background-image: url("../images/icon-dollar.svg");
-   //       width: 0.6875rem;
-   //       height: 1.0625rem;
-   //    }
-   // }
-
-   // &__people-wrapper {
-   //    &::before {
-   //       content: "";
-   //       background-image: url("../images/icon-person.svg");
-   //       width: 0.8125rem;
-   //       height: 1rem;
-   //    }
-   // }
-
    &__form {
       display: grid;
       gap: var(--spacing-lg-1);
