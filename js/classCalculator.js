@@ -59,12 +59,12 @@ export class Calculator {
     );
     tipElements.push(tipFieldCustom);
     for (const tipElement of tipElements) {
-      this.selectTipClick("click", tipElement, tipElements);
+      this.selectTipEvents("click", tipElement, tipElements);
     }
-    this.selectTipClick("input", tipFieldCustom);
+    this.selectTipEvents("input", tipFieldCustom);
   }
 
-  selectTipClick(triggerEvent, nodeElement, tipElements = null) {
+  selectTipEvents(triggerEvent, nodeElement, tipElements = null) {
     const tipClickFunction = (e) => {
       if (tipElements) {
         for (const tipElement of tipElements) {
@@ -137,7 +137,7 @@ export class Calculator {
     if (
       !(this.#billAmount === 0) ||
       !(this.#tipAmount === 0.05) ||
-      !(this.#numberOfPeople === 1)
+      !(this.#numberOfPeople === 0)
     ) {
       resetButton.classList.remove("muted");
       resetButton.classList.add("active");
