@@ -59,7 +59,7 @@ const tipElements = Array.from(
 
 2. Adding the icon in the input. Since input is a void element and I cant use ::before. We have to wrap the input in a wrapper.
 
-```js
+```html
 <div class="bill__amount-wrapper input__wrapper">
    <input
       type="number"

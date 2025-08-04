@@ -1,7 +1,7 @@
 export class Calculator {
   #billAmount = 0;
   #tipAmount = 0.05;
-  #numberOfPeople = 1;
+  #numberOfPeople = 0;
 
   initializeEvents() {
     this.initializeBillAmount();
@@ -127,8 +127,8 @@ export class Calculator {
 
   resetNumberOfPeople() {
     const numberOfPeople = document.getElementById("bill__people-input");
-    numberOfPeople.value = "1";
-    this.#numberOfPeople = 1;
+    numberOfPeople.value = "0";
+    this.#numberOfPeople = 0;
   }
 
   isResetActive() {
