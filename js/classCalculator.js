@@ -127,7 +127,7 @@ export class Calculator {
 
   resetNumberOfPeople() {
     const numberOfPeople = document.getElementById("bill__people-input");
-    numberOfPeople.value = "0";
+    numberOfPeople.value = "";
     this.#numberOfPeople = 0;
   }
 
